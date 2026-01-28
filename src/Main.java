@@ -8,7 +8,8 @@ public class Main {
 
         do {
             System.out.println("\n===== MENU PRINCIPAL =====");
-            System.out.println("1 - Sistema de Valor por Metragem");
+            System.out.println("1 - Sistema de Cálculo de Metragem");
+            System.out.println("2 - Sistema de Cálculo de Média de Idade");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
 
@@ -16,11 +17,13 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    sequential.SistemaDeValorMetragem();
+                    sequential.SistemaDeCalculoDeMetragem();
                     break;
                 case 0:
                     System.out.println("Saindo do sistema...");
                     break;
+                case 2:
+                    sequential.SistemaCalculoMediaIdade();
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
                     break;
