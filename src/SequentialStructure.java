@@ -64,5 +64,40 @@ public class SequentialStructure {
 
         x = sc.nextLine();
     }
+
+    public void SistemaCalculoMediaNota(){
+
+        float nota1,nota2,media;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("---PROGRAMA DE CÁLCULO DE MÉDIA DE NOTAS ---");
+
+        System.out.println("Digite a Primeira Nota: ");
+        nota1 = sc.nextFloat();
+
+        System.out.println("Digite a Segunda Nota: ");
+        nota2 = sc.nextFloat();
+
+        media = (nota1+nota2)/2;
+
+        if(media<6 && media>=0){
+
+            System.out.println("Média Final: " + media);
+            System.out.println("Status: REPROVADO");
+
+        } else if (media>6) {
+
+            System.out.println("Média Final: " + media);
+            System.out.println("Status: APROVADO");
+
+        }else {
+
+            System.out.println("WTF?");
+
+        }
+
+
+    }
+
 }
 
